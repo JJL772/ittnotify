@@ -1,0 +1,8 @@
+build 
+cmake-*
+*.o 
+*.so
+*.a
+*.dll
+*.pdb 
+*.lib
