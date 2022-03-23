@@ -20,6 +20,8 @@ set_target_properties(ittnotify PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 if(NOT WIN32)
 	target_link_libraries(ittnotify dl)
+	set(CMAKE_CXX_FLAGS "-fPIC")
+	set(CMAKE_C_FLAGS "-fPIC")
 endif()
 
 install(TARGETS ittnotify
