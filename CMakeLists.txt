@@ -29,6 +29,8 @@ set_property(TARGET ittnotify PROPERTY
 
 if(NOT WIN32)
 	target_link_libraries(ittnotify dl)
+	set(CMAKE_CXX_FLAGS "-fPIC")
+	set(CMAKE_C_FLAGS "-fPIC")
 endif()
 
 install(TARGETS ittnotify
